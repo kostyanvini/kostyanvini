@@ -27,7 +27,9 @@ todoText.addEventListener('keydown', (e) =>{
 //Функция добавления задач
 function addTaskInTodo(){
     let date = new Date();
-    let dateTime = date.getHours()+ ":" + date.getMinutes();
+    let dateTime;
+    if(date.getMinutes() < 10) dateTime = date.getHours()+ ":" + date.getMinutes() + "0";
+    else  dateTime = date.getHours()+ ":" + date.getMinutes();
     if(todoText.value == ""){
         alert("Введите задачу")
     }
