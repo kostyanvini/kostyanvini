@@ -1,5 +1,6 @@
 'use sctrict'
 //Переменные
+
 let todoText = document.querySelector('.todoText'),
 todoAdd = document.querySelector('.todo-add'),
 todoList = document.querySelector('.todo'),
@@ -25,13 +26,16 @@ todoText.addEventListener('keydown', (e) =>{
 
 //Функция добавления задач
 function addTaskInTodo(){
+    let date = new Date();
+    let dateTime = date.getHours()+ ":" + date.getMinutes();
     if(todoText.value == ""){
         alert("Введите задачу")
     }
     else{
         let newTodo = {
             todo: todoText.value,
-            checked: false
+            checked: false,
+            date: dateTime
         }
         todo.push(newTodo)
         todoAddList();
@@ -46,9 +50,10 @@ function todoAddList(){
     todo.forEach(function(item, i){
         todoTask += `
         <div class="todo-list-item">
-            <input type="checkbox" class="task-checkbox" id="task_${i}" ${item.checked ? 'checked' : ''}>
-            <label for="task_${i}">${item.todo}</label>
-            <button class="delete-todo">Х</button>
+            <span class="date">${item.date}</span>
+            <input type="checkbox" class="task-checkbox" id="task_${i}" ${item.checked ? 'checked' : ''}><br>
+            <label for="task_${i}" class="todo-text">${item.todo}</label><br>
+            <button class="delete-todo">Х</button> <hr>
         </div>
         `
         todoList.innerHTML = todoTask;

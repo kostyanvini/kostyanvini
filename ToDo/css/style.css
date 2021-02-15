@@ -45,8 +45,8 @@
     border: none;
     background: none;
     color: red;
-    margin-left: 20px;
-    font-size: 18px;
+    font-size: 25px;
+    margin: 10px 0 10px 0;
     cursor: pointer;
 }
 .todo-list-item{
@@ -58,7 +58,11 @@
 }
 
 .task-checkbox{
-    width: 18px;
-    height: 18px;
-    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+.date{
+    margin-right: 30px;
+    color: #0ab0ce;
+    font-size: 30px;
 }
