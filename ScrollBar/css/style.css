@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.block{
+    height: 5000px;
+}
+.progress__bar{
+    position: fixed;
+    top: 0;
+    height: 12px;
+    background-color: rgb(47, 0, 255);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
