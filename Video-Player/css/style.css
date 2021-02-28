@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.video-show{
+    display: block;
+    margin: 100px auto;
+    width: 800px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+}
+
+.play-video{
+    background: url(../ico/play.ico) center center/cover no-repeat;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.pause-video{
+    background: url(../ico/pause.ico) center center/cover no-repeat;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+
+.video-block{
+    height: 100%;
+}
+
+.elements-video{
+    height: 40px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    margin-top: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    background-color: rgba(0, 0, 0, 0.438);
+    transition: all 1s ease;
+}
+
+.progress-video{
+    position: relative;
+    height: 15px;
+    width: 88%;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    margin-right: 13px;
+}
+
+.fullwindow-video{
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+}
+
+.time-video{
+    text-align: center;
+    width: 70px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.progress-video-bar{
+    position: absolute;
+    display: block;
+    z-index: -10;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.473);
+    height: 100%;
+}

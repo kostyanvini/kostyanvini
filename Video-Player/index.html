@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Video player</title>
+</head>
+<body>
+    
+    <div class="video-show">
+        <div class="video-block">
+            <!--Для проверки работоспособности необходимо указать путь до видео в атрибут "src"-->
+            <video src="" width="100%" height="100%" class="media-player" id="media-player" controlslist="nodownload"></video>
+        </div>
+        <div class="elements-video">
+            <button id="play-video" class="play-video"></button>
+            <div class="time-video" id="time-video">0:00</div>
+            <div class="progress-video" id="progress-video"><span class="progress-video-bar"></span></div>
+            <button class="fullwindow-video" id="fullwindow-video"></button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
